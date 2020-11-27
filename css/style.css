@@ -28,26 +28,30 @@ h1 {
   text-shadow: 2px 2px #bddddb;
   border-radius: var(--borderRadius);
   animation-name: animateHeader;
-  animation-duration: 4s;
+  animation-duration: 2s;
 }
 
 h1:hover {
-  transform: rotateZ(360deg);
+  transform: perspective(9cm) rotateX(360deg);
   transition: transform 2s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .nav-bar ul {
   display: flex;
   list-style: none;
-  margin-left: auto;
+  justify-content: flex-end;
 }
 
 .nav-bar ul li {
   font-size: 1.2rem;
   color: white;
-  margin: auto;
+  margin-right: 20px;
   padding: 10px;
   transition: background-color 1s ease-in-out;
+}
+
+.nav-bar ul li:last-child {
+  margin-right: 0px;
 }
 
 .nav-bar ul li:hover {
