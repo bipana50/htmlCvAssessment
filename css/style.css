@@ -66,7 +66,6 @@ h1:hover {
 }
 
 .content-container {
-  background: var(--underTone);
   min-height: calc(100vh - 42px);
   padding: 20px;
 }
